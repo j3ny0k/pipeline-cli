@@ -1,30 +1,37 @@
 # Pipeline CLI
 
-CLI-программа для обработки списка чисел через цепочку операций.
+Simple CLI tool to process numbers using a chain of operations.
 
 ## Available operations
 
-- even — оставить чётные числа
-- odd — оставить нечётные числа
-- double — умножить каждое число на 2
-- square — возвести каждое число в квадрат
+- even — keep even numbers
+- odd — keep odd numbers
+- double — multiply each number by 2
+- square — square each number
+- sort — sort numbers
 
-## Input format
+## Run
 
-Операции вводятся через `_`
+```bash
+python pipeline_cli.py
+```
 
-Пример:
-even_double
-odd_square
+## Input
 
-## Example
+- Enter numbers separated by space
+- Enter operations separated by space
 
-available operations: even, odd, double, square
-enter operations using "\_" (example: even_double)
+### Example
 
-nums: 1 2 3 4 5
-operations: even_double
+nums: 1 2 3 4 5  
+operations: even double
 
-input: 1, 2, 3, 4, 5
-operations: even, double
+## Help
+
+Type `help` in operations input to show available operations again.
+
+## Example output
+
+input: 1, 2, 3, 4, 5  
+operations: even, double  
 result: 4, 8
